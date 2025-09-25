@@ -1,9 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.cs" Inherits="_2LAyer_Pro.ProductDetails" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductbuyPage.aspx.cs" Inherits="_2LAyer_Pro.ProductbuyPage" %>
 
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Product Details</title>
+    <title></title>
     <style type="text/css">
         body {
             font-family: Arial, sans-serif;
@@ -67,7 +68,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container">
+        <div>
             <table class="auto-style1">
                 <tr>
                     <td rowspan="4" style="width:260px">
@@ -100,7 +101,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="padding-top:20px;">
-                        <asp:Button ID="Button1" runat="server" CssClass="btn-add" Text="Add To Cart" OnClick="Button1_Click" />
+                        <asp:Button ID="Button1" runat="server" CssClass="btn-add" Text="BUY NOW" OnClick="Button1_Click" />
                     </td>
                 </tr>
             </table>

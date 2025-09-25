@@ -29,12 +29,12 @@ namespace _2LAyer_Pro
                 reg_id = Convert.ToInt32(i);
                 reg_id++;
             }
-            string ins = "insert into Login values(" + reg_id + ",'" + TextBox4.Text + "','" + TextBox4.Text + "','Admin', GETDATE())";
+            string ins = "insert into Login values(" + reg_id + ",'" + TextBox4.Text + "','" + TextBox5.Text + "','Admin', GETDATE())";
             int sta = obj.fn_Nonquery(ins);
             if (sta > 0)
             {
-                string insun = "INSERT INTO Users_Registraion (User_id, Name, Age, Email, Phone, User_Status) " +
-               "VALUES (" + reg_id + ", '" + TextBox1.Text + "', '" + TextBox7.Text + "', '"+TextBox2.Text + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', 'Active')";
+                string insun = "INSERT INTO Users_Registration (User_id, Name, Age, Email, Phone, User_Status) " +
+               "VALUES (" + reg_id + ", '" + TextBox1.Text + "', '" + TextBox7.Text + "', '"+TextBox2.Text + "', '" + TextBox3.Text +"', 'Active')";
 
                 int stu = obj.fn_Nonquery(insun);
                 if (stu > 0)

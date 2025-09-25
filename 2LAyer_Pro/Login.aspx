@@ -1,5 +1,4 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="_2LAyer_Pro.Login" %>
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -9,52 +8,54 @@
 
     <style>
         body {
-            background: linear-gradient(135deg, #4e73df, #1cc88a);
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            background: url('https://picsum.photos/1920/1080?blur') no-repeat center center/cover;
             font-family: 'Segoe UI', sans-serif;
         }
-           body, form {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-        .login-card {
-            background: #fff;
-            padding: 2.5rem;
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
             border-radius: 1rem;
-            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 2.5rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
             width: 100%;
-            max-width: 400px;
+            max-width: 380px;
+            color: #fff;
         }
 
-        .login-card h3 {
+        .glass-card h3 {
+            text-align: center;
             margin-bottom: 1.5rem;
             font-weight: 700;
-            text-align: center;
-            color: #4e73df;
         }
 
         .form-control {
-            border-radius: 50px;
-            padding: 0.7rem 1rem;
+            border-radius: 0.75rem;
+            background: rgba(255, 255, 255, 0.25);
+            border: none;
+            color: #fff;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
         }
 
         .btn-custom {
-            background: #1cc88a;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            border: none;
+            border-radius: 0.75rem;
             color: #fff;
-            border-radius: 50px;
-            padding: 0.6rem;
-            width: 100%;
             font-weight: 600;
-            transition: 0.3s;
+            padding: 0.7rem;
+            transition: transform 0.2s ease-in-out;
         }
 
         .btn-custom:hover {
-            background: #17a673;
+            transform: scale(1.05);
         }
 
         .register-link {
@@ -64,7 +65,7 @@
 
         .register-link a {
             text-decoration: none;
-            color: #4e73df;
+            color: #ffeb3b;
             font-weight: 500;
         }
 
@@ -75,7 +76,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="login-card">
+        <div class="glass-card">
             <h3>Login</h3>
             <div class="mb-3">
                 <asp:Label ID="Label1" runat="server" Text="Username" CssClass="form-label"></asp:Label>

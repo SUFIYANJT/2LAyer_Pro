@@ -6,26 +6,30 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .body{
+          body {
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height:100vh;
-            margin: 0;
+            background: url('https://picsum.photos/1920/1080?blur') no-repeat center center/cover;
+            font-family: 'Segoe UI', sans-serif;
         }
-        .auto-style1 {
-            width: 100%;
-        }
-        .Main {
-            background: linear-gradient(135deg, #4e73df, #1cc88a);
-        }
-        .RegiCard{
-           background: #fff;
-            padding: 2.5rem;
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
             border-radius: 1rem;
-            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 2.5rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
             width: 100%;
-            max-width: 400px;
+            max-width: 380px;
+            color: #fff;
+        }
+
+        .glass-card h3 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
         }
         .RegiCard h3{
              margin-bottom: 1.5rem;
@@ -46,7 +50,7 @@
 <body class="Main">
     <form id="form1" runat="server">
 
-        <div class="RegiCard">
+        <div class=".glass-card">
             <table class="auto-style1">
                 <tr>
                     <td>

@@ -133,6 +133,7 @@
     <Content Include="LICENSE.txt" />
     <Content Include="Login.aspx" />
     <Content Include="ProducTAdd.aspx" />
+    <Content Include="ProductbuyPage.aspx" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="READ-ME.txt" />
     <Content Include="Register.aspx" />
@@ -172,6 +173,13 @@
     </Compile>
     <Compile Include="ProducTAdd.aspx.designer.cs">
       <DependentUpon>ProducTAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductbuyPage.aspx.cs">
+      <DependentUpon>ProductbuyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductbuyPage.aspx.designer.cs">
+      <DependentUpon>ProductbuyPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductDetails.aspx.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
