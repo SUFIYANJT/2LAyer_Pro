@@ -30,22 +30,19 @@ namespace _2LAyer_Pro
         public string fn_scalar(string sqlquery)
         {
             if (con.State == ConnectionState.Open)
-            {
                 con.Close();
-            }
+
             cmd = new SqlCommand(sqlquery, con);
             con.Open();
-            string s = cmd.ExecuteScalar().ToString();
+            object result = cmd.ExecuteScalar();
             con.Close();
-            if (s == null)
-            {
-                return "3";
-            }
+
+            if (result == null || result == DBNull.Value)
+                return "0";
             else
-            {
-                return s;
-            }
+                return result.ToString();
         }
+
         public SqlDataReader Fn_Reader(string sqlquery)
         {
             if (con.State == ConnectionState.Open)

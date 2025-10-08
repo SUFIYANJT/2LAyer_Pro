@@ -76,6 +76,7 @@
     <Content Include="contact.html" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\style.css" />
+    <Content Include="Orders.aspx" />
     <Content Include="Phs\electronics-website-template.jpg" />
     <Content Include="img\avatar.jpg" />
     <Content Include="img\carousel-1.jpg" />
@@ -166,6 +167,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProducTAdd.aspx.cs">
       <DependentUpon>ProducTAdd.aspx</DependentUpon>
